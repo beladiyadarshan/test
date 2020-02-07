@@ -1,0 +1,357 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+    box-sizing: border-box;  
+    
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.banner {
+    background-color: #dd9292;
+    text-align: center;
+    overflow: hidden;
+}
+
+body {
+    display: block;
+    margin: 0;
+}
+
+.log {
+    
+    padding-top:30px;
+    margin:auto;
+    width:100px;
+    
+
+}
+.dlog {
+    display: inline-block;
+    content:url("../images/ddulogo.png");
+    width:70px;
+    height:100px;
+
+}
+
+.emily {
+    color: white;
+}
+
+.emily:hover {
+color: black;
+text-shadow: 2px 2px #fff;
+}
+
+.logo {
+background-color: transparent;
+-webkit-animation: square-to-circle 4s 1s infinite alternate;
+animation: square-to-circle 2s 1s infinite alternate;
+display: inline-block;
+width: 60px;
+}
+
+h2 {
+font-size: 1em;
+}
+
+p {
+font-size: .8em;
+}
+
+@-webkit-keyframes logo{
+  0%{}
+  25%{}
+  50%{}
+  75%{}
+  100%{}
+}
+
+ 
+@-webkit-keyframes square-to-circle {
+  0%  {
+    border-radius:0 0 0 0;
+  }
+  25%  {
+    border-radius:50% 0 0 0;
+  }
+  50%  {
+    border-radius:50% 50% 0 0;
+  }
+  75%  {
+    border-radius:50% 50% 50% 0;
+  }
+  100% {
+    border-radius:50% 0;
+  }
+}
+
+@-webkit-keyframes square-to-circle {
+  0%  {
+    border-radius:0 0 0 0;
+    background:#fff; 
+  }
+  25%  {
+    border-radius:50% 0 0 0;
+    background:#E1E1E1; 
+  }
+  50%  {
+    border-radius:50% 50% 0 0;
+    background:#fff;
+  }
+  75%  { 
+    border-radius:50% 50% 50% 0;
+    background:#E1E1E1;
+  }
+  100% {  
+    border-radius:50% 0;
+    background:#fff;
+  }
+}
+
+@-webkit-keyframes square-to-circle {
+  0%  {
+    border-radius:0 0 0 0;
+    background: #fff;
+    transform:rotate(0deg);
+  }
+  25%  {
+    border-radius:50% 50% 0 0;
+    background:#E1E1E1;
+    opacity: 2%;
+    transform:rotate(40deg);
+  }
+  50%  {
+    border-radius:50% 50% 50% 0;
+    background:#E1E1E1;
+    opacity: 2%;
+    transform:rotate(90deg);
+  }
+  75%  { 
+    border-radius:50% 50% 50% 0;
+    background:#fff;
+    opacity: 2%;
+    transform:rotate(360deg);
+  }
+  100% {  
+    border-radius:0;
+    background:#E1E1E1;
+    transform:rotate(360deg);
+  }
+}
+
+@keyframes logo{
+  0%{}
+  25%{}
+  50%{}
+  75%{}
+  100%{}
+}
+
+ 
+@keyframes square-to-circle {
+  0%  {
+    border-radius:0 0 0 0;
+  }
+  25%  {
+    border-radius:50% 0 0 0;
+  }
+  50%  {
+    border-radius:50% 50% 0 0;
+  }
+  75%  {
+    border-radius:50% 50% 50% 0;
+  }
+  100% {
+    border-radius:50% 0;
+  }
+}
+
+@keyframes square-to-circle {
+  0%  {
+    border-radius:0 0 0 0;
+    background:#fff; 
+  }
+  25%  {
+    border-radius:50% 50% 0 0;
+    background:#E1E1E1; 
+  }
+  50%  {
+    border-radius:50% 50% 0 0;
+    background:#fff;
+  }
+  75%  { 
+    border-radius:50% 50% 50% 0;
+    background:#E1E1E1;
+  }
+  100% {  
+    border-radius:50% 0;
+    background:#fff;
+  }
+}
+
+@keyframes square-to-circle {
+  0%  {
+    border-radius:0 0 0 0;
+    background: #fff;
+    transform:rotate(0deg);
+  }
+  25%  {
+    border-radius:50% 50% 0 0;
+    background:#E1E1E1;
+    opacity: 2%;
+    transform:rotate(45deg);
+  }
+  50%  {
+    border-radius:50% 50% 50% 0;
+    background:#E1E1E1;
+    opacity: 2%;
+    transform:rotate(90deg);
+  }
+  75%  { 
+    border-radius:50% 50% 50% 0;
+    background:#fff;
+    opacity: 2%;
+    transform:rotate(180deg);
+  }
+  100% {  
+    border-radius:0;
+    background:#E1E1E1;
+    transform:rotate(360deg);
+  }
+}
+.progress-button button {
+    height: 50px;
+    width: 50px;
+    background-image: url(../images/cart-06.svg);
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: transparent;
+    position: relative;
+    transition: 0.6s linear;
+    transition-duration: 2s;
+}
+
+.progress-button span {
+    opacity: 0;
+    transition: 1s linear;
+    transition-timing-function:ease-in-out;
+}
+
+.progress-button button:hover {
+  background-color: black;
+    color: white;
+    font-size: .7em;
+}
+
+.progress-button button:hover span {
+    opacity: 2;
+}
+
+.ch-item {
+  width: 100%;
+  height: 50px;
+  border-radius: 100px;
+    top: 1%;
+  position: absolute;
+  perspective: 500px;
+}
+
+.ch-info{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  transform-style: preserve-3d;
+}
+
+.ch-info > div {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 50px;
+    background-repeat:repeat;
+  background-position: center center;
+  transition: all 0.8s linear;
+  transform-origin: 50% 0%;
+}
+
+.ch-info .ch-info-front {
+  box-shadow: inset 0 0 0 16px rgba(0,0,0,0);
+}
+
+.ch-info .ch-info-back {
+  transform: translate3d(5,-20px) rotate3d(1,0,0,90deg);
+  background: #dd9292;
+  opacity: 0;
+}
+
+.ch-img-1 { 
+  background-image: url(../images/303136.svg);
+}
+
+.ch-info p a:hover {
+  color: white;
+}
+
+.ch-item:hover .ch-info-front {
+  transform: translate3d(0,280px,0) rotate3d(1,0,0,-90deg);
+  opacity: 0;
+}
+
+.ch-item:hover .ch-info-back {
+  transform: rotate3d(1,0,0,0deg);
+  opacity: 2;
+}
+
+@-webkit-keyframes hop{
+       from{
+        -webkit-transform: translate(50px,50px);
+        }
+
+         to {
+        -webkit-transform: translate(20px,-30px);
+        }  
+      }
+
+@keyframes hop{
+       from{
+        transform: translate(10px,50px);
+        }
+
+
+         to {
+        transform: translate(15px,50px);
+        }  
+      }
+
+.bounce {
+    display:block;
+    height:50px;
+    width:50px;
+    background-repeat: no-repeat;
+    background-image: url(../images/icons_gifts-03.svg);
+    margin: 0 auto;
+  
+    -webkit-animation-name: hop;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-direction:alternate;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-delay:0s;
+    -webkit-animation-iteration-count:infinite;
+    animation-name: hop;
+    animation-duration: 1s;
+    animation-direction:alternate;
+    animation-timing-function:linear;
+    animation-delay:0s;
+    animation-iteration-count:infinite;
+}
